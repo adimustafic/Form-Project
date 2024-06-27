@@ -5,5 +5,95 @@
 }
 
 html {
+  font-family: "Inter", sans-serif;
   font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+
+  display: grid;
+}
+
+.container {
+  width: 110rem;
+  height: 60rem;
+
+  margin: auto;
+
+  background-color: #000;
+
+  border: none;
+  border-radius: 2rem;
+
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.form-container {
+  text-transform: uppercase;
+
+  padding: 3rem;
+
+  background-color: #f1e6dd;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.contact-text {
+  justify-self: self-start;
+}
+
+.contact-subheading {
+  font-size: 6.3rem;
+  font-weight: 800;
+
+  letter-spacing: 0.15rem;
+
+  color: #0e3c67;
+
+  margin-bottom: 1.2rem;
+}
+
+.contact-description {
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  color: #0e3c67;
+
+  width: 50rem;
+}
+
+.contact-form {
+  display: grid;
+  align-items: center;
+}
+
+.form-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+}
+
+.form-part {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 2rem;
+}
+
+.form-part label {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+
+  margin-bottom: 0.8rem;
+}
+
+.contact-img {
+  height: 60rem;
+
+  border-left: 1px solid #0e3c67;
 }
