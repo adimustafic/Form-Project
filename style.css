@@ -76,6 +76,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 5rem;
+  row-gap: 0.6rem;
 }
 
 .form-part {
@@ -86,10 +87,84 @@ body {
 }
 
 .form-part label {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   letter-spacing: 0.1rem;
 
   margin-bottom: 0.8rem;
+
+  align-self: center;
+}
+
+.form-part input {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  padding: 1.5rem;
+  margin-bottom: 0.8rem;
+
+  box-shadow: 0 0 0.2 #000;
+  /* background-color: #f1e6dd; */
+
+  border: none;
+  border-radius: 2rem;
+
+  height: 3rem;
+}
+
+.form-part input:focus {
+  outline: none;
+}
+
+.form-part input:-webkit-autofill,
+.form-part input:-webkit-autofill:hover,
+.form-part input:-webkit-autofill:focus,
+.form-part input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.form-help {
+  grid-column: 1 / -1;
+
+  align-self: center;
+}
+
+.help {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  padding: 1.5rem;
+  margin-bottom: 0.8rem;
+
+  border: none;
+  border-radius: 2rem;
+
+  height: 5rem;
+}
+
+.help:focus {
+  outline: none;
+}
+
+.form-button {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  padding: 1.5rem;
+  margin-bottom: 0.8rem;
+
+  color: #f1e6dd;
+  background-color: #0e3c67;
+
+  border: none;
+  border-radius: 2rem;
+
+  height: 6rem;
+
+  grid-column: 1/-1;
 }
 
 .contact-img {

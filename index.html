@@ -28,34 +28,57 @@
           <div class="form-elements">
             <div class="form-part">
               <label for="first-name" class="first-name-label"
-                >First name:</label
+                >First name</label
               >
-              <input type="text" id="first-name" class="first-name-input" />
+              <input
+                type="text"
+                id="first-name"
+                class="first-name-input"
+                placeholder="Your name..."
+              />
             </div>
             <div class="form-part">
-              <label for="first-name" class="first-name-label"
-                >First name:</label
-              >
-              <input type="text" id="first-name" />
+              <label for="last-name" class="last-name-label">Last name</label>
+              <input
+                type="text"
+                id="last-name"
+                class="last-name-input"
+                placeholder="Your surname..."
+              />
             </div>
             <div class="form-part">
-              <label for="first-name" class="first-name-label"
-                >First name:</label
-              >
-              <input type="text" id="first-name" />
+              <label for="phone" class="phone-label">Phone</label>
+              <input
+                type="number"
+                id="phone"
+                class="phone-input"
+                placeholder="Phone number..."
+              />
             </div>
             <div class="form-part">
-              <label for="first-name" class="first-name-label"
-                >First name:</label
-              >
-              <input type="text" id="first-name" />
+              <label for="email" class="email-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="email-input"
+                placeholder="Email address..."
+              />
             </div>
-            <div class="form-part">
+            <div class="form-part form-help">
               <label for="first-name" class="first-name-label"
-                >First name:</label
+                >What do you need help with</label
               >
-              <input type="text" id="first-name" />
+              <select name="help" id="help" class="help">
+                <option value="#">Select one of the options below</option>
+                <option value="kitchen">Kitchen</option>
+                <option value="bedroom">Bedroom</option>
+                <option value="bathroom">Bathroom</option>
+                <option value="living-room">Living room</option>
+                <option value="all">All of the above</option>
+                <option value="other">Other</option>
+              </select>
             </div>
+            <button type="submit" class="form-button">Contact Us</button>
           </div>
         </form>
       </div>
